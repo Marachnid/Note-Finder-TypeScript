@@ -13,7 +13,12 @@ I focused on implementing some feedback to make the application much more dynami
         -Queries are kept more consistent and more easily changed/retrieved
         -querySelectorAll was causing some issues iterating over td elements so it was excluded from the map
 
-Older Examples of where the project started can be found in "oldFiles/" as a reference to where the project started.
+    -I worked on separating the application into different files and reducing code bulk
+        -Queries and musical scales are in their own files and exported to index.ts
+        -Musical scales have been parsed down to just a number[] of scale-specific intervals that are fed into processing logic instead of each scale function calculating their own values and repeating a ton of boilerplate
+
+
+Older Examples of where the project started can be found in "oldFiles/" as a reference to where the project started and some of the improvements
 
 
 Scripts are included as well: (npm run ....)
@@ -32,3 +37,8 @@ Coming soon to a browser near you:
     -Main function would be to save custom scales
 4. Improve styling to suit a program with more than one user
     -Tailwind sounds interesting to learn, otherwise Bootstrap or custom CSS
+5. New Name Ideas (don't dispute me):
+    -Gnarly Gnar-Finder
+    -The Shredulator
+    -The Grateful B.E.A.D(g)
+    -Dr. Evil's Alan Parsons Project (TBD on this one)
