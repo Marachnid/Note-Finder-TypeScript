@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="/js/index.js"></script>
+    <title>Note Finder</title>
+</head>
+<body>
+
+    <h1>Note Finder</h1>
+
+    <div id="notesContainer">
+        <div id="controlsContainer">
+
+            <h2>Toggle Highlight</h2>
+            <div id="highlightControls">
+                <label for="noteHighlight">
+                    <input type="radio" name="highlight" id="noteHighlight"
+                            value="noteHighlight" checked>Single Note Highlight
+                </label>
+
+                <label for="scaleHighlight">
+                    <input type="radio" name="highlight" id="scaleHighlight"
+                            value="scaleHighlight"/>Scale Highlight
+                </label>
+            </div>
+
+
+            <h2>Select Scale</h2>
+            <div id="scaleControls">
+                <label for="minorScale">
+                    <input type="radio" name="scale" id="minorScale" checked>Minor Scale
+                </label>
+
+                <label for="hungarianMinorScale">
+                    <input type="radio" name="scale" id="hungarianMinorScale">Hungarian Minor Scale
+                </label>
+
+                <label for="majorScale">
+                    <input type="radio" name="scale" id="majorScale">Major Scale
+                </label>
+
+            </div>
+
+
+
+
+
+        </div>
+        
+        <table id="fretboard"></table>
+    </div>
+
+    <script type="module">
+        import {init} from "/js/index.js";
+        window.addEventListener("DOMContentLoaded", (event) => {
+
+            init();
+            window.init = init;
+        });
+    </script>
+    
+</body>
+</html>
