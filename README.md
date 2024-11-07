@@ -16,18 +16,12 @@ I focused on implementing some feedback to make the application much more dynami
 Older Examples of where the project started can be found in "oldFiles/" as a reference to where the project started.
 
 
-Scripts are included as well:
-    Windows:
+Scripts are included as well: (npm run ....)
         build - cleans and compiles
         start - starts the server
         clean - removes dist and webapp/js directories
         compile - compiles dist and webapp/js
         launch - build and start
-
-    Linux: (I didn't have a chance to test these)
-        buildLinux
-        cleanLinux
-        launchLinux
 
 
 Coming soon to a browser near you:

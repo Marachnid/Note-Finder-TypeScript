@@ -6,13 +6,9 @@
   "scripts": {
     "build": "npm run clean && npm run compile",
     "start": "node dist/server.js",
-    "clean": "rmdir /s /q dist && rmdir /s /q webapp\\js",
+    "clean": "[ -d dist ] && rm -rf dist && [ -d webapp/js ] && rm -rf webapp/js",
     "compile": "tsc -p tsconfig.dist.json && tsc -p tsconfig.webapp.json",
-    "launch": "npm run build && npm run start",
-    
-    "buildLinux": "npm run cleanLinux && npm run compile",
-    "cleanLinux": "rm -rf dist && rm -rf webapp\\js",
-    "launchLinux": "npm run buildLinux && npm run start"
+    "launch": "npm run build && npm run start"
   },
   "keywords": [],
   "author": "mcherry",
