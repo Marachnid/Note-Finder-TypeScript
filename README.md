@@ -27,18 +27,3 @@ Scripts are included as well: (npm run ....)
         clean - removes dist and webapp/js directories
         compile - compiles dist and webapp/js
         launch - build and start
-
-
-Coming soon to a browser near you:
-1. User controls to set fretboard number of strings and starting note
-    -Drop/custom tuning controls?
-2. Custom scale input box to set user-specified scale
-3. Profile page w/ MySQL database
-    -Main function would be to save custom scales
-4. Improve styling to suit a program with more than one user
-    -Tailwind sounds interesting to learn, otherwise Bootstrap or custom CSS
-5. New Name Ideas (don't dispute me):
-    -Gnarly Gnar-Finder
-    -The Shredulator
-    -The Grateful B.E.A.D(g)
-    -Dr. Evil's Alan Parsons Project (TBD on this one)
